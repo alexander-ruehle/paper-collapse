@@ -1,0 +1,64 @@
+.collapse-card {
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+  cursor: pointer;
+  color: $mid-gray;
+  padding: 1rem;
+  @include transition(.4s);
+
+  .title {
+    @include cf;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    i {
+      float: left;
+    }
+    span {
+      float: right;
+      margin-left: 1rem;
+    }
+    strong {
+      display: block;
+      margin-left: 4rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &::after {
+        color: $text-color;
+        font-family: 'FontAwesome';
+        padding-left: .4rem;
+        font-size: 1rem;
+        line-height: 1.49rem; // 1.49rem < 1.5rem standard font-height
+      }
+    }
+  }
+
+  .body {
+    padding: 1rem;
+    display: none;
+  }
+
+  * {
+    @include border-box();
+  }
+
+  &.active {
+    @include raise-2;
+    margin: 1rem -1rem;
+    &:hover {
+      .title {
+        strong::after {
+          content: "\f066"; // compress icon
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .title {
+      strong::after {
+        content: "\f065"; // expand icon
+      }
+    }
+  }
+}
