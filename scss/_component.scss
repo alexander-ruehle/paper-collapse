@@ -1,0 +1,32 @@
+.paper-collapse {
+  .card {
+    cursor: pointer;
+    @include transition(.2s);
+    &.active {
+      -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18824);
+      -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18824);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18824);
+      margin: 1rem -1rem;
+      z-index: 200;
+      &:hover {
+        strong::after {
+          content: "\f066"; // compress icon
+        }
+      }
+    }
+    &:hover {
+      strong::after {
+        content: "\f065"; // expand icon
+      }
+    }
+    strong::after {
+      color: $text-color;
+      font-family: 'FontAwesome';
+      padding-left: 2px;
+      font-size: 1rem;
+      line-height: 1.49rem; // 1.45rem < 1.5rem standard font-height
+    }
+    border-bottom: 1px solid $light-gray;
+    color: $mid-gray;
+  }
+}
