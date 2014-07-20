@@ -1,10 +1,10 @@
 # Paper Collapse (v0.1.0)
-Pure CSS3 collapsible paper cards.
+Collapsible paper cards.
 See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentations and Demos.
 
 ## Dependencies
-[FontAwesome > v4.1.0](http://fontawesome.io/)
-Or you can modify the after pseudo element with your own choise of icons.
+- [FontAwesome > v4.1.0](http://fontawesome.io/) Or you can modify the after pseudo element with your own choise of icons.
+- Jquery > 2.1.0
 
 ## Inspired by
 - [Google Material Design](http://www.google.com/design/)
