@@ -1,4 +1,4 @@
-# Paper Collapse (v0.1.0)
+# Paper Collapse (v0.2.0)
 Collapsible paper cards.
 See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentations and Demos.
 
@@ -8,6 +8,10 @@ See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentat
 
 ## Inspired by
 - [Google Material Design](http://www.google.com/design/)
+
+## Changelist
+### v0.2.0
+- adds js callbacks `onShow`, `onHide`, `onShowComplete`, `onHideComplete`
 
 ## Liscence
 Copyright (c) 2014 Alexander Rühle
