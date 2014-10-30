@@ -23,10 +23,3 @@
     onShowComplete: ->
     onHideComplete: ->
   return) jQuery
-
-(($) ->
-  $ ->
-    $('.collapse-card').paperCollapse {}
-    return
-
-  return) jQuery

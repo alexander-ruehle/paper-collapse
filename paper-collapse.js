@@ -27,10 +27,4 @@
     };
   })(jQuery);
 
-  (function($) {
-    $(function() {
-      $('.collapse-card').paperCollapse({});
-    });
-  })(jQuery);
-
 }).call(this);
