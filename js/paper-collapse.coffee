@@ -1,3 +1,11 @@
+###
+  Paper Collapse v0.2.1
+
+  Collapsible paper cards.
+
+  Made with love by bbo - ©2014 Alexander Rühle
+  MIT License http://opensource.org/licenses/MIT
+###
 (($) ->
   'use strict'
   $.fn.paperCollapse = (options) ->
