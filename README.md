@@ -1,4 +1,4 @@
-# Paper Collapse (v0.2.0)
+# Paper Collapse (v0.2.1)
 Collapsible paper cards.
 See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentations and Demos.
 
