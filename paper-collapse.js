@@ -1,6 +1,6 @@
 
-/*
-  Paper Collapse v0.2.1
+/*!
+  Paper Collapse v0.4.0
 
   Collapsible paper cards.
 
