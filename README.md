@@ -1,4 +1,4 @@
-# Paper Collapse (v0.2.0)
+# Paper Collapse (v0.4.0)
 Collapsible paper cards.
 See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentations and Demos.
 
@@ -10,11 +10,18 @@ See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentat
 - [Google Material Design](http://www.google.com/design/)
 
 ## Changelist
+### v0.4.0
+- reworks css with [BEM](http://bbo-code.com/posts/3-bem-tackle-your-growing-css-with-a-pattern-that-just-works) pattern
+- adds additional js callback `closeHandler`
+
+### v0.2.1
+- plugin is now opt-in and must be initialized
+
 ### v0.2.0
 - adds js callbacks `onShow`, `onHide`, `onShowComplete`, `onHideComplete`
 
 ## Liscence
-Copyright (c) 2014 Alexander Rühle
+Copyright (c) 2015 Alexander Rühle
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
