@@ -3,6 +3,7 @@ require 'rake'
 require 'uglifier'
 require 'coffee-script'
 
+# gem install therubyracer
 # gem install sass
 # gem install uglifier
 # gem install coffee-script

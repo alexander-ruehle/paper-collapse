@@ -9,13 +9,8 @@
     <meta http-equiv="cleartype" content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BobScss</title>
-
     <link rel="stylesheet" href="../paper-collapse.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="../paper-collapse.min.js"></script>
-
     <style>
         body {
             background-color: #eee;
@@ -29,6 +24,18 @@
             margin-left: auto;
             padding: 2rem;
         }
+
+        .mt1 {
+            margin-top: 1rem;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .mouse-pointer {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -36,12 +43,13 @@
 <section>
     <div class="container">
         <div class="collapse-card">
-            <div class="title">
-                <i class="fa fa-question-circle fa-2x fa-fw"></i>
-                <span>01:40</span>
-                <strong>Well, hello there</strong>
+            <div class="collapse-card__heading">
+                <h4 class="collapse-card__title">
+                    <i class="fa fa-question-circle fa-2x fa-fw"></i>
+                    Well, hello there
+                </h4>
             </div>
-            <div class="body">
+            <div class="collapse-card__body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
                 ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
@@ -51,27 +59,32 @@
             </div>
         </div>
         <div class="collapse-card">
-            <div class="title">
-                <i class="fa fa-play-circle fa-2x fa-fw"></i>
-                <span>01:40</span>
-                <strong>Gigantomaniac Monster Text, very long, much width, wow</strong>
+            <div class="collapse-card__heading">
+                <h4 class="collapse-card__title">
+                    <i class="fa fa-question-circle fa-2x fa-fw"></i>
+                    Gigantomaniac Monster Text, very long, much width, wow
+                </h4>
             </div>
-            <div class="body">
+            <div class="collapse-card__body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
                 ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
                 dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
                 magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
                 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                <div class="collapse-card__close_handler mt1 align-right mouse-pointer">
+                    Show less <i class="fa fa-chevron-up"></i>
+                </div>
             </div>
         </div>
         <div class="collapse-card">
-            <div class="title">
-                <i class="fa fa-question-circle fa-2x fa-fw"></i>
-                <span>01:40</span>
-                <strong>Generic Title</strong>
+            <div class="collapse-card__heading">
+                <h4 class="collapse-card__title">
+                    <i class="fa fa-question-circle fa-2x fa-fw"></i>
+                    Generic Title
+                </h4>
             </div>
-            <div class="body">
+            <div class="collapse-card__body">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                 labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
                 ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
@@ -83,6 +96,8 @@
     </div>
 </section>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="../paper-collapse.min.js"></script>
 <script>
     $('.collapse-card').paperCollapse();
 </script>

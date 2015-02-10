@@ -14,7 +14,7 @@ See [bbo-code.com](http://bbo-code.com/components/paper-collapse) for Documentat
 - adds js callbacks `onShow`, `onHide`, `onShowComplete`, `onHideComplete`
 
 ## Liscence
-Copyright (c) 2014 Alexander Rühle
+Copyright (c) 2015 Alexander Rühle
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
