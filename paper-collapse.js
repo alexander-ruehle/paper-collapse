@@ -18,11 +18,11 @@
         if ($(this).closest('.collapse-card').hasClass('active')) {
           settings.onHide.call(this);
           $(this).closest('.collapse-card').removeClass('active');
-          $(this).closest('.collapse-card').find('.collapse-card__body').slideUp(settings.animationDuration, settings.onHideComplete);
+          $(this).closest('.collapse-card').find('.collapse-card__body').stop().slideUp(settings.animationDuration, settings.onHideComplete);
         } else {
           settings.onShow.call(this);
           $(this).closest('.collapse-card').addClass('active');
-          $(this).closest('.collapse-card').find('.collapse-card__body').slideDown(settings.animationDuration, settings.onShowComplete);
+          $(this).closest('.collapse-card').find('.collapse-card__body').stop().slideDown(settings.animationDuration, settings.onShowComplete);
         }
       });
       return this;
